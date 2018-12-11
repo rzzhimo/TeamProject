@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <router-link to="/launchAct" class="btn btn-info">发起活动</router-link>
     <router-view/>
   </div>
 </template>
