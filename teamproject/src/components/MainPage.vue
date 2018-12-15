@@ -307,7 +307,7 @@ img::-moz-selection {
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
   }
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
@@ -520,8 +520,8 @@ header.masthead .post-heading .meta a {
   margin: 0;
   -webkit-transition: top 0.3s ease, opacity 0.3s ease;
   transition: top 0.3s ease, opacity 0.3s ease;
-  vertical-align: middle;
-  vertical-align: baseline;
+  /* vertical-align: middle;
+  vertical-align: baseline; */
   opacity: 0;
 }
 
