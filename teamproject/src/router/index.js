@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import launchAct from '@/components/launchAct'
 
+
 Vue.use(Router)
 
 export default new Router({
@@ -16,6 +17,7 @@ export default new Router({
       path: '/launchAct',
       name: 'launchAct',
       component: launchAct
-    }
+    },
+    
   ]
 })
