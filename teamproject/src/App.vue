@@ -1,23 +1,59 @@
 <template>
+<<<<<<< HEAD
   <div id="app">
     <div><img src="./assets/logo.png"></div>
     <router-view/>
+=======
+  <div id="app" class="container">
+    <!-- <img src="./assets/logo.png" class="logo"> -->
+    <test></test>
+    <!-- <invite-list></invite-list> -->
+    <!-- <MainPage></MainPage> -->
+    <!-- <router-view/> -->
+>>>>>>> 23220917f5e7970cc77663680a85394962c0c10a
   </div>
 </template>
 
 <script>
+import HelloWorld from './components/HelloWorld'
+import InviteList from './components/InviteList'
+import test from './components/test'
+import MainPage from './components/MainPage'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    HelloWorld,
+    InviteList,
+    test,
+    MainPage
+  }
 }
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin-top: 60px;
+  font-size: 24px;
+}
+
+.logo {
+  display: block;
+  margin: 20px auto;
+  height: 75px;
 }
 </style>
