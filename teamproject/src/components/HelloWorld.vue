@@ -43,7 +43,7 @@
           </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5">Find your favorite event and hopefully favorite buddy here :)</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#help">Find Out More</a>
+            <a class="btn btn-info btn-xl js-scroll-trigger"  href="#help">Find Out More</a>
           </div>
         </div>
       </div>
@@ -325,6 +325,7 @@ h6 {
 
 .bg-primary {
   background-color: #F05F40 !important;
+  background: rgb(194, 200, 201) url('../assets/header.jpg');
 }
 
 .bg-dark {
@@ -454,13 +455,21 @@ img::-moz-selection {
     color: #F05F40;
   }
 }
-
+/* 想改一下背景 他太大了 */
 header.masthead {
-  padding-top: 10rem;
+  
+  /* padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url("../assets/header.jpg");
   background-position: center center;
-  background-size: cover;
+  background-size: cover; */
+  margin-top: 0px;
+	background: rgb(194, 200, 201) url('../assets/header.jpg');
+	background-size: 100% 100%;
+	position: relative;
+	height: 200px;
+	
+	margin-bottom:30px;
 }
 
 header.masthead hr {
