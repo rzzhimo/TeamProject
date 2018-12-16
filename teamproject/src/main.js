@@ -4,9 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router' 
 import 'bootstrap/dist/css/bootstrap.min.css'//引入了bootstrop4库
-// import BootstrapVue from 'bootstrap-vue'
+import BootstrapVue from 'bootstrap-vue'
 
-// Vue.use(BootstrapVue);
+Vue.use(BootstrapVue);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

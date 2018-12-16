@@ -1,38 +1,33 @@
 <template>
-<<<<<<< HEAD
-  <div id="app">
-    <div><img src="./assets/logo.png"></div>
-    <router-view/>
-=======
   <div id="app" class="container">
     <!-- <img src="./assets/logo.png" class="logo"> -->
-    <test></test>
+    <!-- <router-link to='/'>HelloWorld</router-link> -->
+    <!-- <test></test> -->
     <!-- <invite-list></invite-list> -->
     <!-- <MainPage></MainPage> -->
-    <!-- <router-view/> -->
->>>>>>> 23220917f5e7970cc77663680a85394962c0c10a
+    <router-view/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
-import InviteList from './components/InviteList'
-import test from './components/test'
-import MainPage from './components/MainPage'
+//import InviteList from './components/InviteList'
+//import test from './components/test'
+//import MainPage from './components/MainPage'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    InviteList,
-    test,
-    MainPage
+    //InviteList,
+    //test,
+    //MainPage
   }
 }
 </script>
 
-<style>
-* {
+<style scoped>
+/* * {
   box-sizing: border-box;
 }
 
@@ -46,7 +41,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
-  color: #2c3e50;
+  /* color: #2c3e50;
   margin-top: 60px;
   font-size: 24px;
 }
@@ -55,5 +50,13 @@ export default {
   display: block;
   margin: 20px auto;
   height: 75px;
+} */ 
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>

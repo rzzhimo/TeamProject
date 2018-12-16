@@ -54,12 +54,12 @@
 </div>
 </template>
 
-<script type="text/javascript" src="../../assets/activity/info.js" charset="utf-8"></script>
+
 <script>
 
 
 export default{
-        name: 'containerAct',
+        name: 'launchAct',
         data(){
             return{
                 actperson:'',
@@ -71,15 +71,6 @@ export default{
             create() {
                 if(this.actname!=''&&this.actperson!=''&&this.actplace!=''){
 					
-										// var oFso,oFile,sFile,sContent;
-    								    // sFile = "../../src/assets/activity/info.json";
- 
-    								    // //写文件
-										// oFso = new ActiveXObject("Scripting.FileSystemObject");
-										// oFso = new ActiveXObject("WScript.shell");   
-    								    // oFile = oFso.OpenTextFile(sFile,2,true); //写方式打开
-    								    // oFile.WriteLine(this.actname+this.actperson+this.actplace);      
-										// oFile.Close();  
 										this.$router.push({ path: `/` });
 										}
 										

@@ -3,7 +3,11 @@
      <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Create Event</a>
+        <button @click="create1" class="btn btn-info col-md-4" >
+				<!-- <span class="glyphicon glyphicon-search"></span> -->
+				发起活动
+				</button>
+        <router-link :to="{ path: '/launchAct' }"></router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -221,7 +225,7 @@ export default {
     // data(){
     // return{
     // myJson: MY_JSON,
-
+          name: 'test',
           data(){
               return{
                   myJson: activities,
@@ -237,7 +241,9 @@ export default {
           console.log(1);
         //   alert(activities[0].Name);
       },
-
+      create1(){
+           this.$router.push({ path: `/launchAct` });
+      },
       shift1: function (e) {
           this.i = 0;
         //   alert(activities.length);
@@ -266,14 +272,14 @@ export default {
       }
     },
 
-  name: 'test'
+  
 }
 
 
 
 </script>
 
-<style>
+<style scoped>
 body {
   padding-top: 54px;
 }
