@@ -1,5 +1,6 @@
 <template id="welcome">
   <div class="container">
+	  
 	  <div id="jumbotron">
 	        <div class="welcome-message col-md-12">
 	          <h1>Launch Your Activity</h1>
@@ -41,9 +42,18 @@
         </div>
 				<hr>
 				<div class="row">
+					 <div class="col-md-4">活动的信息</div><input class="col-md-8" v-model="actinfo"  type="text"/>
+        </div>
+				<hr>
+				<div class="row">
 				<button @click="create" class="btn btn-info col-md-4" >
 				<!-- <span class="glyphicon glyphicon-search"></span> -->
 				发起活动
+				</button>
+				<div class="col-md-4"/>
+				<button @click="tomain" class="btn btn-primary col-md-4" >
+				<!-- <span class="glyphicon glyphicon-search"></span> -->
+				返回首页
 				</button>
 				
         <router-link :to="{ path: '/HelloWorld' }"></router-link> 
@@ -51,6 +61,12 @@
 			</div>      
    </div>
    <div class="row">...</div>
+   <footer class="py-5 bg-dark" style="">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Invitor 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
 </div>
 </template>
 
@@ -64,14 +80,18 @@ export default{
             return{
                 actperson:'',
                 actname:'',
-                actplace:'',
+				actplace:'',
+				actinfo:''
             }
         },
         methods:{
+			tomain(){
+                this.$router.push({ path: `/` });
+			},
             create() {
                 if(this.actname!=''&&this.actperson!=''&&this.actplace!=''){
 					
-										this.$router.push({ path: `/` });
+										this.$router.push({ path: `/user` });
 										}
 										
 
@@ -79,7 +99,7 @@ export default{
                     alert("请不要漏填信息")
                 }
 						},
-						downloadFile(fileName, content){
+			downloadFile(fileName, content){
     						var aLink = document.createElement('a');
     						var blob = new Blob([content]);
     						var evt = document.createEvent("HTMLEvents");
@@ -136,6 +156,18 @@ h2{
 	left: 0;
 	padding: 20px 0px 20px 50px;
 	margin: 0px 0px 0px 0px ;
+}
+@media (min-width: 992px 768px 1200px){
+    #jumbotron{
+	margin-top: 0px;
+	background: rgb(194, 200, 201) url('../../src/assets/activity/读书.jpg');
+	background-size: 100% 100%;
+	position: relative;
+	height: 300px;
+	margin-left: 120px;
+	margin-right: 120px ;
+	margin-bottom:30px;
+}
 }
 img{
 	padding:0px;

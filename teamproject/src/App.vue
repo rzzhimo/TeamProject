@@ -13,7 +13,8 @@
 import HelloWorld from './components/HelloWorld'
 //import InviteList from './components/InviteList'
 //import test from './components/test'
-//import MainPage from './components/MainPage'
+//import user from './components/user'
+//import section1 from './components/section1'
 
 export default {
   name: 'App',

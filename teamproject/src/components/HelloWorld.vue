@@ -13,10 +13,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About
-                <span class="sr-only">(current)</span>
+            <li class="nav-item ">
+              <a class="nav-link"  @click="user">UserCenter
+                
               </a>
+              <router-link :to="{ path: '/' }"></router-link>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Help</a>
@@ -244,6 +245,9 @@ export default {
       create1(){
            this.$router.push({ path: `/launchAct` });
       },
+      user(){
+           this.$router.push({ path: `/user` });
+      },
       shift1: function (e) {
           this.i = 0;
         //   alert(activities.length);
@@ -468,8 +472,9 @@ header.masthead {
 	background-size: 100% 100%;
 	position: relative;
 	height: 200px;
+  
 	
-	margin-bottom:30px;
+	margin-bottom:10px;
 }
 
 header.masthead hr {

@@ -167,7 +167,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 body {
   font-size: 20px;
   color: #212529;
