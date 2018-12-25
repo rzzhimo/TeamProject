@@ -54,9 +54,9 @@ However, feel free to open an issue to ask for a new feature support.
 
 ## Contribution
 
-> rzzhimo
-> kmykoh97
-> GHB123123
+> [rzzhimo](https://github.com/rzzhimo)  
+> [kmykoh97](https://github.com/kmykoh97)  
+> [GHB123123](https://github.com/GHB123123)
 
 ## Special Thanks
 
