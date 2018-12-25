@@ -3,21 +3,20 @@
      <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a @click="create1" class="btn btn-default btn-lg col-md-4" style="color:white" >
+        <button @click="create1" class="btn btn-info col-md-4" >
 				<!-- <span class="glyphicon glyphicon-search"></span> -->
 				发起活动
-				</a>
+				</button>
         <router-link :to="{ path: '/launchAct' }"></router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item ">
-              <a class="nav-link"  @click="user">UserCenter
-                
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About
+                <span class="sr-only">(current)</span>
               </a>
-              <router-link :to="{ path: '/' }"></router-link>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Help</a>
@@ -44,7 +43,7 @@
           </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5">Find your favorite event and hopefully favorite buddy here :)</p>
-            <a class="btn btn-info btn-xl js-scroll-trigger"  href="#help">Find Out More</a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#help">Find Out More</a>
           </div>
         </div>
       </div>
@@ -57,7 +56,7 @@
             <h2 class="section-heading text-white">We've got what you need!</h2>
             <hr class="light my-4">
             <p class="text-faded mb-4">Get started here if you do not have an account yet</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" @click="create1">Get Started!</a>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#register">Get Started!</a>
           </div>
         </div>
       </div>
@@ -245,9 +244,6 @@ export default {
       create1(){
            this.$router.push({ path: `/launchAct` });
       },
-      user(){
-           this.$router.push({ path: `/user` });
-      },
       shift1: function (e) {
           this.i = 0;
         //   alert(activities.length);
@@ -309,13 +305,13 @@ hr.light {
 }
 
 a {
-  color: rgb(0, 0, 0);
+  color: #F05F40;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: #000000;
+  color: #f05f40;
 }
 
 h1,
@@ -329,7 +325,6 @@ h6 {
 
 .bg-primary {
   background-color: #F05F40 !important;
-  background: rgb(194, 200, 201) url('../assets/header.jpg');
 }
 
 .bg-dark {
@@ -459,22 +454,13 @@ img::-moz-selection {
     color: #F05F40;
   }
 }
-/* 想改一下背景 他太大了 */
+
 header.masthead {
-  
-  /* padding-top: 10rem;
+  padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url("../assets/header.jpg");
   background-position: center center;
-  background-size: cover; */
-  margin-top: 0px;
-	background: rgb(194, 200, 201) url('../assets/header.jpg');
-	background-size: 100% 100%;
-	position: relative;
-	height: 200px;
-  
-	
-	margin-bottom:10px;
+  background-size: cover;
 }
 
 header.masthead hr {
@@ -495,10 +481,7 @@ header.masthead p {
     font-size: 1.15rem;
   }
 }
-img{
-  width: 100%;
-  height: 400px;
-}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -516,4 +499,102 @@ img{
     font-size: 4rem;
   }
 }
+
+/* .service-box {
+  max-width: 400px;
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.portfolio-box .portfolio-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(240, 95, 64, 0.9);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+.portfolio-box:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
+  }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
+}
+
+.text-primary {
+  color: #F05F40 !important;
+} */
+
+/* .btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+} */
+
+/* .btn-primary {
+  background-color: #F05F40;
+  border-color: #F05F40;
+} */
+
+/* .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #fff;
+  background-color: #ee4b28 !important;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+} */
 </style>

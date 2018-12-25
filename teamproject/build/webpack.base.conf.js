@@ -3,23 +3,47 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
-
+var webpack=require('webpack');
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
 const createLintingRule = () => ({
-  test: /\.(js|vue)$/,
-  loader: 'eslint-loader',
-  enforce: 'pre',
-  include: [resolve('src'), resolve('test')],
-  options: {
-    formatter: require('eslint-friendly-formatter'),
-    emitWarning: !config.dev.showEslintErrorsInOverlay
-  }
+  // test: /\.(js|vue)$/,
+  // loader: 'eslint-loader',
+  // enforce: 'pre',
+  // include: [resolve('src'), resolve('test')],
+  // options: {
+  //   formatter: require('eslint-friendly-formatter'),
+  //   emitWarning: !config.dev.showEslintErrorsInOverlay
+  // }
 })
 
 module.exports = {
+  // plugins: [  
+
+  //   　　　　new webpack.ProvidePlugin({  
+   
+  //   　　　　　　$:"jquery",  
+   
+  //  　　　　　　 jQuery:"jquery",  
+   
+  //  　　　　　　 "windows.jQuery":"jquery"  
+   
+  //  　　　　 })  
+   
+  //  　　],  
+  //  alias: {  
+
+  //   　　　　 'vue$': 'vue/dist/vue.esm.js',  
+    
+  //   　　　　 '@': resolve('src'),  
+    
+  //   　　　　 'assets': path.resolve(__dirname, '../src/assets'),  
+    
+  //   　　　　 'jquery': "jquery/src/jquery"  
+    
+  //   　　 }  ,
   context: path.resolve(__dirname, '../'),
   entry: {
     app: './src/main.js'
