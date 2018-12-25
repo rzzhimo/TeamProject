@@ -26,7 +26,8 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Register & Login</a>
+              <a class="nav-link" @click="login">Register & Login</a>
+              <router-link :to="{ path: '/' }"></router-link>
             </li>
           </ul>
         </div>
@@ -247,6 +248,9 @@ export default {
       },
       user(){
            this.$router.push({ path: `/user` });
+      },
+      login(){
+          this.$router.push({ path: `/login` });
       },
       shift1: function (e) {
           this.i = 0;

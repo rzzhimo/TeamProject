@@ -4,7 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import launchAct from '@/components/launchAct'
 //import test from '@/components/test'
 import user from '@/components/user'
-
+// import login from '@/components/login'
 
 Vue.use(Router)
 
@@ -30,6 +30,11 @@ export default new Router({
       name: 'user',
       component: user
     },
+    // {
+    //   path: '/login',
+    //   name: 'login',
+    //   component: login
+    // },
     
   ]
 })
