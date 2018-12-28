@@ -79,6 +79,8 @@ However, feel free to open an issue to ask for a new feature support.
 > [kmykoh97](https://github.com/kmykoh97)  
 > [GHB123123](https://github.com/GHB123123)  
 
+Feel free to reach anyone of us if you have any doubt or suggestion on our project
+
 ## Special Thanks
 
 Ren Rui from School of Software Engineering Shanghai Jiao Tong University for guiding us throughout this project.
