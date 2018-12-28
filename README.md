@@ -43,7 +43,13 @@ This idea is doable and most probably able to spark some interest among our user
 
 ## Usage and Installation
 
-1. First install all dependencies:
+1. First, change to the main project directory:
+
+```
+> cd invitor
+```
+
+2. Next, install all dependencies:
 
 ```
 # with npm package manager
