@@ -12,7 +12,7 @@ To further investigate the usefulness of this idea, we have randomly selected 15
 
 ### Table of survey result
 
-| Attributes | no Of Respondents Who Agree | no Of Respondent Who Disagree | no Of Respondent Who Not Sure | Result |
+| Attributes | No Of Respondents Agree | no Of Respondents Disagree | no Of Respondents Maybe | Result |
 |---|---|---|---|---|
 | Usefulness | 12 | 0 | 3 | Useful |
 | Feasibility | 15 | 0 | 0 | Feasible |
@@ -40,6 +40,8 @@ This idea is doable and most probably able to spark some interest among our user
 ![](img/5.jpg)
 
 ![](img/6.jpg)
+
+![](img/7.png)  
 
 ## Usage and Installation
 
